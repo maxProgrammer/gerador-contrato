@@ -4,7 +4,6 @@ package com.maxprogrammer.application;
 import com.maxprogrammer.models.entities.Contract;
 import com.maxprogrammer.models.entities.Installment;
 import com.maxprogrammer.models.services.ContractService;
-import com.maxprogrammer.models.services.OnlinePaymentService;
 import com.maxprogrammer.models.services.PaypalService;
 
 import java.text.ParseException;
@@ -36,7 +35,7 @@ public class Program {
 
         cs.processContract(contract, N);
 
-        System.out.println("Intallments:");
+        System.out.println("Installments:");
         for (Installment it : contract.getInstallments()) {
             System.out.println(it);
         }
